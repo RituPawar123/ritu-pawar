@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./Image.jpg";
+import image from "./RituImage.jpg";
 import "../App.css";
 
 const Welcome = () => {

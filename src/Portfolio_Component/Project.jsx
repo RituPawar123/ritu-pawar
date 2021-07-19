@@ -1,6 +1,6 @@
 import React from "react";
 import image from "./Project.PNG";
-const Project = () => {
+const Project = (props) => {
   return (
     <>
       <div className="container p-5" id="project">
@@ -10,19 +10,8 @@ const Project = () => {
             <img src={image} className="img-fluid project " />
           </div>
           <div className=" col-12 col-md-7  ">
-            <h5 className="mb-3">ONLINE GROCERY SHOPPING</h5>
-            <p>
-              This is responsive web based website for Online Grocery Ordering
-              using html, css, javascript And Python Django.
-            </p>
-            <a
-              className="d-inline-block text-truncate"
-              style={{ maxWidth: "200px" }}
-              href="https://groceryshop.pythonanywhere.com/groceryUser/"
-              target="_blank"
-            >
-              https://groceryshop.pythonanywhere.com/groceryUser/
-            </a>
+            <h1>{props.heading}</h1>
+            <p>{props.text}</p>
           </div>
         </div>
       </div>

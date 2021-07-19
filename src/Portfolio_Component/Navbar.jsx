@@ -23,7 +23,7 @@ const Navbar = () => {
             </button>
 
             <div
-              className="collapse navbar-collapse col-4 ml-auto border"
+              className="collapse navbar-collapse col-4 ml-auto "
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto fw-bold mb-2 mb-lg-0">

@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./Image.jpg";
+import image from "./RituImage.jpg";
 import resume from "./RituPawar.pdf";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";

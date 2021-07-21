@@ -22,12 +22,10 @@ export default () => {
       
       <Navbar />
       <Welcome />
-     
-      
       <About/>
       <MyService/>
-      <Myproject/>
       <MySkills />
+      <Myproject/>
       <Contact />
       
       

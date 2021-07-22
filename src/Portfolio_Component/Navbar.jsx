@@ -4,14 +4,14 @@ const Navbar = () => {
   return (
     <>
       <div
-        className="row sticky-top nav-shadow"
-        style={{ backgroundColor: "#3cb371" }}
+        className="row sticky-top nav-shadow bg-darkgreen"
       >
-        <nav className="navbar navbar-expand-lg  navbar-dark ">
+        <nav className="navbar navbar-expand-lg navbar-dark ">
           <div className="container-fluid row ">
-            <h1 className="navbar-brand col-2 mr-auto">PORTFOLIO</h1>
+            <div className="col-12 col-md-12 col-xl-11 row mx-auto">
+            <h1 className="navbar-brand col-2 me-auto">PORTFOLIO</h1>
             <button
-              className="navbar-toggler col-2"
+              className="navbar-toggler col-2 ms-auto"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -23,10 +23,10 @@ const Navbar = () => {
             </button>
 
             <div
-              className="collapse navbar-collapse col-4 ml-auto border"
+              className="collapse navbar-collapse col-4 ms-auto text-end"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto fw-bold mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto fw-bold mb-2 mb-lg-0 text-end">
                 <li className="px-4 nave-item ">
                   <NavHashLink
                     className="text-white "
@@ -88,6 +88,7 @@ const Navbar = () => {
                   </NavHashLink>
                 </li>
               </ul>
+            </div>
             </div>
           </div>
         </nav>

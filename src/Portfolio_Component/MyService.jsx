@@ -28,19 +28,18 @@ const MyService = (props) => {
   const { heading, description } = data;
   return (
     <div
-      className="row text-light py-5 "
-      style={{ backgroundColor: "#3cb371" }}
+      className="row text-light py-5 bg-darkgreen"
     >
-      <div className="col-10  mx-auto row" id="service">
-        <div className="text-center  col-12 mb-5 ">
+      <div className="col-md-10 col-12 mx-auto row" id="service">
+        <div className="text-center col-12 mb-5 ">
           <h1>
             <span className="fw-bold text-dark "> MY</span> SERVICE
           </h1>
         </div>
-        <div className="col-12 row">
+        <div className="col-12 row mx-auto px-0">
           {data.map((value, index) => {
             return (
-              <div className="col-12 col-md-6 p-3  row " key={index}>
+              <div className="col-12 col-md-6 p-3  row  mx-auto" key={index}>
                 <Service
                   heading={value.heading}
                   description={value.description}

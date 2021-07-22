@@ -1,6 +1,6 @@
 import React from "react";
 import CallIcon from "@material-ui/icons/Call";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
+import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
@@ -28,18 +28,22 @@ const Contact = () => {
                   href="tel:9340658641"
                   className="text-decoration-none cursor-pointer"
                 >
-                  <CallIcon className="m-2" />
-                  <span>9340658641</span>
+                  <CallIcon className="m-2 text-green" />
+                  <span className="text-dark">9340658641</span>
                 </a>
               </div>
 
               <div>
-                <MailOutlineIcon className="m-2" />
-                <span>pawarritu1998@gmail.com</span>
+                <a href="mailto:pawarritu1998@gmail.com"
+                  className="text-decoration-none cursor-pointer"
+                >
+                <MailIcon className="m-2 text-green" />
+                <span className="text-dark">pawarritu1998@gmail.com</span>
+                </a>
               </div>
               <div>
-                <LocationOnIcon className="m-2" />
-                <span> 25, ram apartment khatiwala tank Indore</span>
+                <LocationOnIcon className="m-2 text-green" />
+                <span className="text-dark"> 25, ram apartment khatiwala tank Indore</span>
               </div>
               {/* </div> */}
             </p>
@@ -89,26 +93,28 @@ const Contact = () => {
         <div className="col-12 footer-link mt-5 py-3 text-center">
           <a href="https://www.instagram.com/ritu_021/">
             <InstagramIcon
-              className="mx-2"
+              className="mx-2 text-green"
               style={{ fontSize: "30px", color: "white" }}
             />
           </a>
           <a href="https://www.facebook.com/ritu.pawar.58323">
             <FacebookIcon
-              className="mx-2"
+              className="mx-2 text-green"
               style={{ fontSize: "30px", color: "white" }}
             />
           </a>
           <a href="https://www.linkedin.com/in/ritu-pawar-4286161a0/">
             <LinkedInIcon
-              className="mx-2"
+              className="mx-2 text-green"
               style={{ fontSize: "30px", color: "white" }}
             />
           </a>
-          <MailOutlineIcon
-            className="mx-2"
+          <a href="mailto:pawarritu1998@gmail.com">
+          <MailIcon
+            className="mx-2 text-green"
             style={{ fontSize: "30px", color: "white" }}
           />
+          </a>
         </div>
       </div>
     </>

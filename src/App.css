@@ -36,3 +36,18 @@
 .footer-link {
   background-color: rgb(88, 80, 80);
 }
+.service-icon{
+  border-right: 3px solid ;
+  border-radius: 50% !important;
+}
+.bg-darkgreen{
+  background: linear-gradient(
+-154deg
+,#42bc7f,#3b795a);
+}
+.bg-green{
+  background-color:mediumseagreen !important;
+}
+.text-green{
+  color:mediumseagreen !important;
+}

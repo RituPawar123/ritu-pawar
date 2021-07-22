@@ -14,7 +14,7 @@ const Myproject = (props) => {
     <div className="row" id="project">
       <div className="col-md-10 col-12 row mx-auto my-5">
       <div>
-        <h1> My Projects</h1>
+        <h1 className="text-green text-uppercase fw-bold"><span className="text-dark"> My </span>Projects</h1>
       </div>
       {data.map((value, index) => {
         return (

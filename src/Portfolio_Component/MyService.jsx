@@ -27,10 +27,10 @@ const MyService = (props) => {
   ];
   const { heading, description } = data;
   return (
-    <div
+    <div id="service"
       className="row text-light py-5 bg-darkgreen"
     >
-      <div className="col-md-10 col-12 mx-auto row" id="service">
+      <div className="col-md-10 col-12 mx-auto row" >
         <div className="text-center col-12 mb-5 ">
           <h1>
             <span className="fw-bold text-dark "> MY</span> SERVICE

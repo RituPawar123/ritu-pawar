@@ -24,10 +24,9 @@ const Contact = () => {
           <div className="row col-12 col-md-6">
             <p>
               <h3
-                className=" text-left mb-3 fw-bold "
-                style={{ color: " mediumseagreen" }}
+                className=" text-left mb-3 fw-bold text-green text-uppercase"
               >
-                Contact Me
+                <span className="text-dark">Contact </span>Me
               </h3>
               <div> You can contact me or text me for any help and query.</div>
 

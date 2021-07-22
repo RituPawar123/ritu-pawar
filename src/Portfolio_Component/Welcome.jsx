@@ -1,5 +1,5 @@
 import React from "react";
-import image from "./Project.PNG";
+import image from "./RituImage.jpg";
 import "../App.css";
 
 const Welcome = () => {
@@ -22,7 +22,7 @@ const Welcome = () => {
           </p>
         </div>
         <div className="col-5 d-none d-md-block">
-          <img src={image} className="img-fluid mypic" />
+          <img src={image} className="img-fluid mypic rounded shadow" />
         </div>
       </div>
       </div>

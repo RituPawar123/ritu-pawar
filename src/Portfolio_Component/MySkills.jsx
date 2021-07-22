@@ -25,7 +25,7 @@ const MySkills = (Props) => {
         <div className="col-12 col-md-10 mx-auto m-5 row">
           <div className="col-12 col-md-6 row   ">
             <div className="row col-12 align-items-center text-light  mx-auto">
-              <h1 className="col-12 col-md-4 text-center">
+              <h1 className="col-12 col-md-4 text-center fw-bold">
                 MY <span style={{ color: "mediumseagreen" }}>SKILL</span>{" "}
               </h1>
               <div className="col-12 col-md-8 text-left">

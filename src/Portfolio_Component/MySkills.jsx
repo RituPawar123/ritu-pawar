@@ -21,7 +21,7 @@ const MySkills = (Props) => {
 
   return (
     <>
-      <div className="row py-5  " style={{ backgroundColor: "black" }}>
+      <div className="row py-5  " style={{ backgroundColor: "black" }}  id="myskill">
         <div className="col-12 col-md-10 mx-auto m-5 row">
           <div className="col-12 col-md-6 row   ">
             <div className="row col-12 align-items-center text-light  mx-auto">

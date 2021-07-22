@@ -70,7 +70,7 @@ const About = () => {
 
           <div
             style={{ textAlign: "right" }}
-            className="col-12 col-md-6 text-right"
+            className="col-12 col-md-6 text-right d-none d-md-block"
           >
             <img src={image} className="img-fluid about-me " />
           </div>

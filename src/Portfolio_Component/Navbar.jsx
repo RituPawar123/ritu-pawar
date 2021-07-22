@@ -26,8 +26,8 @@ const Navbar = () => {
               className="collapse navbar-collapse col-4 ms-auto text-end"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto fw-bold mb-2 mb-lg-0 text-end">
-                <li className="px-4 nave-item ">
+              <ul className="navbar-nav ms-auto fw-bold mb-2 mb-lg-0 text-center text-md--end">
+                <li className="px-4 my-2 nave-item ">
                   <NavHashLink
                     className="text-white "
                     to="#welcome"
@@ -37,7 +37,7 @@ const Navbar = () => {
                     WELCOME
                   </NavHashLink>
                 </li>
-                <li className="px-4 ">
+                <li className="px-4 my-2 ">
                   <NavHashLink
                     className="text-white"
                     to="#about"
@@ -47,27 +47,7 @@ const Navbar = () => {
                     ABOUT
                   </NavHashLink>
                 </li>
-                <li className="px-4 ">
-                  <NavHashLink
-                    className="text-white"
-                    to="#myskill"
-                    activeClassName="selected"
-                    style={{ textDecoration: "none" }}
-                  >
-                    MY SKILL
-                  </NavHashLink>
-                </li>
-                <li className="px-4 ">
-                  <NavHashLink
-                    className="text-white"
-                    to="#project"
-                    activeClassName="selected"
-                    style={{ textDecoration: "none" }}
-                  >
-                    PROJECT
-                  </NavHashLink>
-                </li>
-                <li className="px-4 ">
+                <li className="px-4 my-2 ">
                   <NavHashLink
                     className="text-white"
                     to="#service"
@@ -77,7 +57,27 @@ const Navbar = () => {
                     MY SERVICE
                   </NavHashLink>
                 </li>
-                <li className="px-4 ">
+                <li className="px-4 my-2 ">
+                  <NavHashLink
+                    className="text-white"
+                    to="#project"
+                    activeClassName="selected"
+                    style={{ textDecoration: "none" }}
+                  >
+                    PROJECT
+                  </NavHashLink>
+                </li>
+                <li className="px-4 my-2 ">
+                  <NavHashLink
+                    className="text-white"
+                    to="#myskill"
+                    activeClassName="selected"
+                    style={{ textDecoration: "none" }}
+                  >
+                    MY SKILL
+                  </NavHashLink>
+                </li>
+                <li className="px-4 my-2 ">
                   <NavHashLink
                     className="text-white"
                     to="#contact"

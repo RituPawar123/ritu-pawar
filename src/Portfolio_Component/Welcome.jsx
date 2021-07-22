@@ -10,8 +10,8 @@ const Welcome = () => {
         <div className="col-10 mx-auto d-md-none text-center">
           <img src={image} className="img-fluid mypic" />
         </div>
-        <div className="col-11 col-md-7 mx-auto p-5">
-          <div className="display-4 fw-bold my-3 mb-5 pl-5">
+        <div className="col-11 col-md-7 mx-auto p-md-5 p-3">
+          <div className="display-4 fw-bold my-3 mb-md-5 pl-5">
             Hello, I am Ritu Pawar
           </div>
           {/* <div className="background-image: url('image.jpg');"></div> */}

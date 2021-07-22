@@ -9,7 +9,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Fab } from "@material-ui/core";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import { NavHashLink } from "react-router-hash-link";
-import Project from "./Portfolio_Component/Project";
+import Myproject from "./Portfolio_Component/Myproject";
 
 export default () => {
   return (
@@ -18,10 +18,9 @@ export default () => {
         <div className="container-fluid ">
           <Navbar />
           <Welcome />
-
           <About />
           <MyService />
-          <Project />
+          <Myproject />
           <MySkills />
           <Contact />
         </div>

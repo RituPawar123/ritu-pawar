@@ -1,31 +1,19 @@
 import React from "react";
-import image from "./Project.PNG";
-const Project = () => {
+
+const Project = (props) => {
   return (
     <>
-      <div className="container p-5" id="project">
-        <div className="row">
-          <h3 className="mb-3">My Project</h3>
-          <div className="col-12 col-md-3  ">
-            <img src={image} className="img-fluid project " />
+        <div className="row border project-item col-12 mx-auto rounded p-md-5 my-4 p-3">
+          <div className="col-12 col-md-3 my-3 my-md-0">
+            {console.log(props.projectImage)}
+            <img src={props.projectImage} className="img-fluid project " />
           </div>
-          <div className=" col-12 col-md-7  ">
-            <h5 className="mb-3">ONLINE GROCERY SHOPPING</h5>
-            <p>
-              This is responsive web based website for Online Grocery Ordering
-              using html, css, javascript And Python Django.
-            </p>
-            <a
-              className="d-inline-block text-truncate"
-              style={{ maxWidth: "200px" }}
-              href="https://groceryshop.pythonanywhere.com/groceryUser/"
-              target="_blank"
-            >
-              https://groceryshop.pythonanywhere.com/groceryUser/
-            </a>
+          <div className=" col-12 col-md-7 ">
+            <h1>{props.heading}</h1>
+            <p className="my-4">{props.text}</p>
+            <a href={props.url} className="text-decoration-none project-url text-truncate d-inline-block d-md-block">{props.url}</a>
           </div>
         </div>
-      </div>
     </>
   );
 };

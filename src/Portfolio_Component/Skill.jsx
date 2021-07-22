@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 const Skill = (props) => {
   const classes = useStyles();
   return (
-    <div className="my-2 " id="myskill">
+    <div className="my-2 ">
       <div>
         <div className=" d-flex justify-content-between bd-highlight">
           <div className="p-2 bd-highlight  " style={{ color: "white" }}>

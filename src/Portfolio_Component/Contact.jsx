@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import CallIcon from "@material-ui/icons/Call";
 import MailIcon from '@material-ui/icons/Mail';
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import axios from "axios";
 
 const Contact = () => {
+  const emailUrl = "http://localhost:5000/api/sendMail/";
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [description, setDescription] = useState("");
+  const handelSubmit = (event) => {
+    event.preventDefault();
+    const data = axios.post(emailUrl, { name, email, description });
+    console.log(data);
+  };
   return (
     <>
       <div className="row pt-5 " id="contact">
@@ -48,23 +58,33 @@ const Contact = () => {
               {/* </div> */}
             </p>
           </div>
-          <form className="col-12 col-md-6  border bg-white py-4 shadow ">
+          <form
+            className="col-12 col-md-6  border bg-white py-4 shadow "
+            onSubmit={handelSubmit}
+          >
             {/* <div className=" row mx-auto col-12  "> */}
             <div className=" row mx-auto ">
               <div className="text-white mx-auto  ">
                 <div className=" mx-auto py-5 ">
                   <div className="mb-3  ">
                     <input
-                      type="email"
+                      type="text"
+                      value={name}
+                      onChange={(e) => {
+                        setName(e.target.value);
+                      }}
                       placeholder="Enter Name"
                       className="form-control "
-                      id="Email"
                       aria-describedby="emailHelp"
                     />
                   </div>
                   <div className="mb-3">
                     <input
                       type="email"
+                      value={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
                       placeholder="Enter Email"
                       className="form-control "
                       id="Password"
@@ -75,6 +95,10 @@ const Contact = () => {
                       rows={5}
                       style={{ width: "100%" }}
                       type="text"
+                      value={description}
+                      onChange={(e) => {
+                        setDescription(e.target.value);
+                      }}
                       name="description"
                       placeholder="write text here..."
                     ></textarea>
@@ -105,7 +129,8 @@ const Contact = () => {
           </a>
           <a href="https://www.linkedin.com/in/ritu-pawar-4286161a0/">
             <LinkedInIcon
-              className="mx-2 text-green"
+              className="mx-2
+               text-green"
               style={{ fontSize: "30px", color: "white" }}
             />
           </a>

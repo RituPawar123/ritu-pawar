@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ritu-pawar/static/css/main.3dc8dba9.chunk.css",
+    "main.js": "/ritu-pawar/static/js/main.c6d72994.chunk.js",
+    "main.js.map": "/ritu-pawar/static/js/main.c6d72994.chunk.js.map",
+    "runtime-main.js": "/ritu-pawar/static/js/runtime-main.a8c5aabc.js",
+    "runtime-main.js.map": "/ritu-pawar/static/js/runtime-main.a8c5aabc.js.map",
+    "static/js/2.8eda5144.chunk.js": "/ritu-pawar/static/js/2.8eda5144.chunk.js",
+    "static/js/2.8eda5144.chunk.js.map": "/ritu-pawar/static/js/2.8eda5144.chunk.js.map",
+    "index.html": "/ritu-pawar/index.html",
+    "static/css/main.3dc8dba9.chunk.css.map": "/ritu-pawar/static/css/main.3dc8dba9.chunk.css.map",
+    "static/js/2.8eda5144.chunk.js.LICENSE.txt": "/ritu-pawar/static/js/2.8eda5144.chunk.js.LICENSE.txt",
+    "static/media/Project.3bf413c1.PNG": "/ritu-pawar/static/media/Project.3bf413c1.PNG",
+    "static/media/RituImage.6a146ee8.jpg": "/ritu-pawar/static/media/RituImage.6a146ee8.jpg",
+    "static/media/RituPawar.f4e7c3d4.pdf": "/ritu-pawar/static/media/RituPawar.f4e7c3d4.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a8c5aabc.js",
+    "static/js/2.8eda5144.chunk.js",
+    "static/css/main.3dc8dba9.chunk.css",
+    "static/js/main.c6d72994.chunk.js"
+  ]
+}

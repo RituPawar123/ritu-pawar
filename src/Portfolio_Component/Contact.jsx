@@ -6,17 +6,42 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import axios from "axios";
+import Snackbar from '@material-ui/core/Snackbar';
+import MuiAlert from '@material-ui/lab/Alert';
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
 const Contact = () => {
+  const [open, setOpen] = React.useState(false);
+  const [severity, setSeverity] = React.useState("success");
+  const [message, setMessage] = React.useState("success");
   const emailUrl = "http://localhost:5000/api/sendMail/";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
-  const handelSubmit = (event) => {
-    event.preventDefault();
-    const data = axios.post(emailUrl, { name, email, description });
-    console.log(data);
+  const handleClick = () => {
+    setOpen(true);
   };
+  
+  const handleClose = (event, reason) => {
+    setOpen(false);
+  };
+  const handelSubmit = async (event) => {
+    event.preventDefault();
+    try{
+      const data = await axios.post(emailUrl, { name, email, description });
+      setSeverity("success")
+      setMessage("Thanks for connecting 🙂 !")
+      handleClick()
+    }catch(err){
+      setSeverity("error")
+      setMessage("Oops somthing wrong ☹️ !")
+      handleClick()
+      console.log(err)
+    }
+  };
+
   return (
     <>
       <div className="row pt-5 " id="contact">
@@ -141,6 +166,15 @@ const Contact = () => {
           </a>
         </div>
       </div>
+      <Snackbar
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        open={open}
+        onClose={handleClose}
+        key={"bottomcenter"}
+        autoHideDuration={1500}
+      >
+        <Alert onClose={handleClose} severity={severity}>{message}</Alert>
+      </Snackbar>
     </>
   );
 };

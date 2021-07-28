@@ -11,26 +11,27 @@ const MyService = (props) => {
     },
     {
       heading: "UI-UX",
-      description: "hello this is ritu",
+      description:
+        "Creating user flows, wireframes, prototypes and mockups. Translating requirements into style guides, design systems, design patterns and attractive user interfaces.",
       icon: "	fas fa-pencil-alt",
     },
     {
       heading: "Python-Django Develpoment",
-      description: "hello this is ritu",
+      description:
+        "Write reusable, testable, and efficient code Design and implement of low-latency, high-availability, and performant applications",
       icon: "	fas fa-laptop-code",
     },
     {
       heading: "E-Commerce",
-      description: "hello this is ritu",
+      description:
+        "create our own e commerce website using frontend and backend",
       icon: "	fas fa-cart-plus",
     },
   ];
   const { heading, description } = data;
   return (
-    <div id="service"
-      className="row text-light py-5 bg-darkgreen"
-    >
-      <div className="col-md-10 col-12 mx-auto row" >
+    <div id="service" className="row text-light py-5 bg-darkgreen">
+      <div className="col-md-10 col-12 mx-auto row">
         <div className="text-center col-12 mb-5 ">
           <h1>
             <span className="fw-bold text-dark "> MY</span> SERVICE

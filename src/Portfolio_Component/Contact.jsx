@@ -16,8 +16,8 @@ const Contact = () => {
   const [open, setOpen] = React.useState(false);
   const [severity, setSeverity] = React.useState("success");
   const [message, setMessage] = React.useState("success");
-  // const emailUrl = "https://ritu-portfolio.herokuapp.com/api/sendMail/";
-  const emailUrl = "http://localhost:5000/api/sendMail/";
+  const emailUrl = "https://ritu-portfolio.herokuapp.com/api/sendMail/";
+  // const emailUrl = "http://localhost:5000/api/sendMail/";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");

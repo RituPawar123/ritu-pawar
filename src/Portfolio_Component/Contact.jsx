@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import CallIcon from "@material-ui/icons/Call";
-import MailIcon from '@material-ui/icons/Mail';
+import MailIcon from "@material-ui/icons/Mail";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import axios from "axios";
-import Snackbar from '@material-ui/core/Snackbar';
-import MuiAlert from '@material-ui/lab/Alert';
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -16,6 +16,7 @@ const Contact = () => {
   const [open, setOpen] = React.useState(false);
   const [severity, setSeverity] = React.useState("success");
   const [message, setMessage] = React.useState("success");
+  // const emailUrl = "https://ritu-portfolio.herokuapp.com/api/sendMail/";
   const emailUrl = "http://localhost:5000/api/sendMail/";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -23,22 +24,22 @@ const Contact = () => {
   const handleClick = () => {
     setOpen(true);
   };
-  
+
   const handleClose = (event, reason) => {
     setOpen(false);
   };
   const handelSubmit = async (event) => {
     event.preventDefault();
-    try{
+    try {
       const data = await axios.post(emailUrl, { name, email, description });
-      setSeverity("success")
-      setMessage("Thanks for connecting 🙂 !")
-      handleClick()
-    }catch(err){
-      setSeverity("error")
-      setMessage("Oops somthing wrong ☹️ !")
-      handleClick()
-      console.log(err)
+      setSeverity("success");
+      setMessage("Thanks for connecting 🙂 !");
+      handleClick();
+    } catch (err) {
+      setSeverity("error");
+      setMessage("Oops somthing is wrong ☹️ !");
+      handleClick();
+      console.log(err);
     }
   };
 
@@ -48,9 +49,7 @@ const Contact = () => {
         <div className="col-12 col-md-10 mx-auto  row ">
           <div className="row col-12 col-md-6">
             <p>
-              <h3
-                className=" text-left mb-3 fw-bold text-green text-uppercase"
-              >
+              <h3 className=" text-left mb-3 fw-bold text-green text-uppercase">
                 <span className="text-dark">Contact </span>Me
               </h3>
               <div> You can contact me or text me for any help and query.</div>
@@ -68,16 +67,20 @@ const Contact = () => {
               </div>
 
               <div>
-                <a href="mailto:pawarritu1998@gmail.com"
+                <a
+                  href="mailto:ritupawar896495@gmail.com.com"
                   className="text-decoration-none cursor-pointer"
                 >
-                <MailIcon className="m-2 text-green" />
-                <span className="text-dark">pawarritu1998@gmail.com</span>
+                  <MailIcon className="m-2 text-green" />
+                  <span className="text-dark">pawarritu1998@gmail.com</span>
                 </a>
               </div>
               <div>
                 <LocationOnIcon className="m-2 text-green" />
-                <span className="text-dark"> 25, ram apartment khatiwala tank Indore</span>
+                <span className="text-dark">
+                  {" "}
+                  25, ram apartment khatiwala tank Indore
+                </span>
               </div>
               {/* </div> */}
             </p>
@@ -159,21 +162,23 @@ const Contact = () => {
             />
           </a>
           <a href="mailto:pawarritu1998@gmail.com">
-          <MailIcon
-            className="mx-2 text-green"
-            style={{ fontSize: "30px", color: "white" }}
-          />
+            <MailIcon
+              className="mx-2 text-green"
+              style={{ fontSize: "30px", color: "white" }}
+            />
           </a>
         </div>
       </div>
       <Snackbar
-        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
         open={open}
         onClose={handleClose}
         key={"bottomcenter"}
         autoHideDuration={1500}
       >
-        <Alert onClose={handleClose} severity={severity}>{message}</Alert>
+        <Alert onClose={handleClose} severity={severity}>
+          {message}
+        </Alert>
       </Snackbar>
     </>
   );

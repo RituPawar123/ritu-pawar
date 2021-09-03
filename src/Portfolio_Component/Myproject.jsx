@@ -13,7 +13,7 @@ const Myproject = (props) => {
     {
       projectImage: corona,
       heading: "Corona Update",
-      text: "This is a web based responsive app, design in bootstrap and python Django. It's a E-commerce application you can buy grocery and other things on this web app.",
+      text: "This is a web based responsive website, shows the spread of corona virus by using some plots. This is developed in python and Django backend and Bootstrap frontend.",
       url: "https://coronaupdate.pythonanywhere.com/",
     },
   ];

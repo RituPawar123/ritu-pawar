@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ritu-pawar/static/css/main.3dc8dba9.chunk.css",
-    "main.js": "/ritu-pawar/static/js/main.576691f1.chunk.js",
-    "main.js.map": "/ritu-pawar/static/js/main.576691f1.chunk.js.map",
+    "main.js": "/ritu-pawar/static/js/main.cd632b26.chunk.js",
+    "main.js.map": "/ritu-pawar/static/js/main.cd632b26.chunk.js.map",
     "runtime-main.js": "/ritu-pawar/static/js/runtime-main.a8c5aabc.js",
     "runtime-main.js.map": "/ritu-pawar/static/js/runtime-main.a8c5aabc.js.map",
     "static/js/2.8eda5144.chunk.js": "/ritu-pawar/static/js/2.8eda5144.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a8c5aabc.js",
     "static/js/2.8eda5144.chunk.js",
     "static/css/main.3dc8dba9.chunk.css",
-    "static/js/main.576691f1.chunk.js"
+    "static/js/main.cd632b26.chunk.js"
   ]
 }
